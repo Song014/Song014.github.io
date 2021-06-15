@@ -8,6 +8,7 @@ tag:
 image: /assets/images/favicon/simicon.png
 headerImage: true
 projects: true
+tags: true
 hidden: true # don't count this post in blog pagination
 description: My ToyProject_errand 
 category: projects
