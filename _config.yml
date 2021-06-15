@@ -3,7 +3,7 @@ bio: A Man who travels the world eating noodles
 description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
-resume: false
+resume: true
 resume-external: false
 resume-url: 'https://google.com/?q=my+resume'
 url: 'https://song014.github.io/'
@@ -38,7 +38,6 @@ pagination:
 projects: true
 about: true
 blog: true
-tags: true
 read-time: true
 show-tags: true
 related: true
