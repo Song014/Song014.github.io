@@ -13,22 +13,15 @@ disqus:
   categories:
     - blog
     - project
-    - portfolio
 github: Song014
 email: thdrltjr789@gmail.com
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  GiSeok:
+    name: GiSeok Song
+    bio: 취업을 합시다.
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+    twitter: 
 width: normal
 pagination:
   enabled: false
