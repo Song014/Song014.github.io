@@ -38,6 +38,7 @@ pagination:
 projects: true
 about: true
 blog: true
+tags: true
 read-time: true
 show-tags: true
 related: true

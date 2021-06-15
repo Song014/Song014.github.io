@@ -22,12 +22,12 @@
             {% endif %}
         {% endif %}
 
-        {% if site.tags == true %}
-            {% if page.title != "tags" %}
+        {% if site.tags !== true %}
+            <!-- {% if page.title != "tags" %} -->
                 <li class="item">
                     <a class="link" href="{{ site.url }}/tags">tags</a>
                 </li>
-            {% endif %}
+            <!-- {% endif %} -->
         {% endif %}
 
         {% if site.about == true %}
