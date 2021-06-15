@@ -3,11 +3,10 @@ bio: 취업을 합시다.
 description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
-tags: true
 resume: false
 resume-external: false
 resume-url: 'https://google.com/?q=my+resume'
-url: 'https://song014.github.io/'
+url: 'https://song014.github.io'
 permalink: '/:title/'
 disqus:
   shortname: mydisqus
