@@ -35,7 +35,7 @@ pagination:
   title: ':title'
   per_page: 5
   permalink: '/:num/'
-projects: true
+projects: false
 about: true
 blog: true
 tags: true
