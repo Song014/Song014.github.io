@@ -3,7 +3,7 @@ title: "마크다운 언어 문법 정리"
 layout: post
 date: 2021-06-15 16:40
 image: /assets/images/markdown.jpg
-headerImage: false
+headerImage: true
 tag:
 - markdown
 - firstCommit
