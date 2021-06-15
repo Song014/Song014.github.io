@@ -21,7 +21,13 @@ authors:
     bio: 취업을 합시다.
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: 
+    twitter: johndoe
+  jamesfoster:
+    name: James Foster
+    bio: A Man who develops software with coffee
+    external-image: false
+    picture: assets/images/james.jpg
+    twitter: jamesfoster
 width: normal
 pagination:
   enabled: false
