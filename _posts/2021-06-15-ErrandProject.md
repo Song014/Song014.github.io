@@ -9,7 +9,7 @@ image: /assets/images/favicon/simicon.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: my toyProject_errand 
+description: My ToyProject_errand 
 category: projects
 author: GiSeok Song
 externalLink: false
