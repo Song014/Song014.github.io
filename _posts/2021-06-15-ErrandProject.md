@@ -11,6 +11,6 @@ projects: true
 hidden: true # don't count this post in blog pagination
 description: My ToyProject_errand 
 category: projects
-author: GiSeok Song
+author: GiSeok
 externalLink: false
 ---
