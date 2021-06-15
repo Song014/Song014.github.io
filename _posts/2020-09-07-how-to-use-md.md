@@ -157,7 +157,7 @@ description: Markdown first using in the blog
 
 [NAVER](https://www.naver.com "링크에 대한 설명")
 
-[상대적 참조](../)
+[상대적 참조](../projects/)
 
 [다음][daum link]
 
