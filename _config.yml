@@ -20,7 +20,8 @@ authors:
     name: GiSeok Song
     bio: 취업을 합시다.
     external-image: false
-    picture: assets/images/profile.jpg 
+    picture: assets/images/profile.jpg
+    twitter: 
 width: normal
 pagination:
   enabled: false
