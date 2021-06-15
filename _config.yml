@@ -3,6 +3,7 @@ bio: 취업을 합시다.
 description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
+tags: true
 resume: false
 resume-external: false
 resume-url: 'https://google.com/?q=my+resume'
@@ -35,10 +36,9 @@ pagination:
   title: ':title'
   per_page: 5
   permalink: '/:num/'
-projects: false
+projects: true
 about: true
 blog: true
-tags: true
 read-time: true
 show-tags: true
 related: true
