@@ -9,7 +9,7 @@ tag:
 - firstCommit
 star: true
 category: blog
-author: GiSeok Song
+author: GiSeok Song 
 description: Markdown first using in the blog
 ---
 
