@@ -74,28 +74,30 @@ description: Markdown first using in the blog
 
 ## 3. 목록
 ---
-## * 순서 있는 목록 
-```
-1. 첫번째
-2. 두번째 
-3. 세번째
-```
-1. 첫번째
-2. 두번째 
-3. 세번째
+* ## 순서 있는 목록 
+    ```
+    1. 첫번째
+    2. 두번째 
+    3. 세번째
+    ```
+    1. 첫번째
+    2. 두번째 
+    3. 세번째  
 
-### 어떤 순서로 하든 내림차순으로 적용.
+    ## 어떤 순서로 하든 내림차순으로 적용.
 
-```
-1. 첫번째
-3. 두번째
-2. 세번째
-```
-1. 첫번째
-3. 두번째
-2. 세번째
+    ```
+    1. 첫번째
+    3. 두번째
+    2. 세번째
+    ```
+
+    1. 첫번째
+    3. 두번째
+    2. 세번째
+
 ---
-## *  순서 없는 목록 
+* ## 순서 없는 목록 
 
 ```
 * 목록1
@@ -169,7 +171,7 @@ description: Markdown first using in the blog
 
 네이버 홈페이지: <https://naver.com>  
 
-[참조 링크]: https://naver.com "네이버로 이동합니다!"
+[참조 링크]: https://naver.com "네이버로 이동"
 
 [daum link]: https://daum.net
 
@@ -180,7 +182,9 @@ description: Markdown first using in the blog
 
 ### 4.2 이미지
 ### 링크와 비슷 하게 !만 앞에 붙혀 서 사용
+    
     ![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)
+
     ![대체 텍스트2][사진]
 
     [사진]: https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F24283C3858F778CA2EFABE "강아지"
@@ -188,8 +192,9 @@ description: Markdown first using in the blog
     
     이미지에 링크 걸기
     [![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)](https://song014.github.io//how-to-use-md/)
-
+    
 ![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)
+
 ![대체 텍스트2][사진]
 
 [사진]: https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F24283C3858F778CA2EFABE "강아지"
