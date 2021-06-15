@@ -10,7 +10,7 @@ headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: my toyProject_errand 
-category: project 
-author: GiSeok
+category: projects
+author: GiSeok Song
 externalLink: false
 ---
