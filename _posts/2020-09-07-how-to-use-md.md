@@ -135,7 +135,7 @@ description: Markdown first using in the blog
 
 ## 4. 링크 및 이미지
 --------------------
-### 링크
+### 4.1 링크
     [GOOGLE](https://www.google.com/)
     [NAVER](https://www.naver.com "링크에 대한 설명")
     [상대적 참조](../)
@@ -178,7 +178,24 @@ description: Markdown first using in the blog
 ---
   
 
-### 이미지
+### 4.2 이미지
+### 링크와 비슷 하게 !만 앞에 붙혀 서 사용
+    ![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)
+    ![대체 텍스트2][사진]
+
+    [사진]: https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F24283C3858F778CA2EFABE "강아지"
+
+    
+    이미지에 링크 걸기
+    [![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)](https://song014.github.io//how-to-use-md/)
+
+![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)
+![대체 텍스트2][사진]
+
+[사진]: https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F24283C3858F778CA2EFABE "강아지"
+
+
+[![대체 텍스트](https://a.disquscdn.com/1623278138/images/noavatar92.png)](https://song014.github.io//how-to-use-md/)
 
 <br>
 
