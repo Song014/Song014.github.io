@@ -17,7 +17,7 @@ externalLink: false
 
 # 토이 프로젝트_심부름
 
-## * 개발환경 구축
+## 1 개발환경 구축
 
 1) [JDK(Java Development Kit) 설치](https://openjdk.java.net/) (8버전 설치함)  
 
