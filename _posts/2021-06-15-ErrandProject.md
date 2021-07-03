@@ -54,11 +54,22 @@ externalLink: false
     ```
     자바 개발시 가장많이 사용하는 이클립스IDE나 
     스프링에서 만든 이클립스 기반 STS4를 설치한다
+
+    sts4 설치시 sts3 add-on 설치해야 
+    Spring Legacy Project 로 프로젝트 생성이 가능하다
     ```
 
     * [이클립스설치](https://www.eclipse.org/downloads/)  
     혹은
     * [STS4설치](https://spring.io/tools)(나는 이거 설치)
+
+4) WAS
+    ```
+    WebProject 실행을위한 WAS중 아파치 톰캣 다운로드 
+    9버전 받음
+    ```
+
+    [톰캣링크](http://tomcat.apache.org/)
 
 ## 2. 프로젝트 생성
 
