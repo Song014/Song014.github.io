@@ -1,5 +1,5 @@
 ---
-title: Toy_Project_errand
+title: 심부름웹 개발환경 구축
 layout: post
 date: 2021-06-15 20:36
 tag:
@@ -15,7 +15,7 @@ author: GiSeok
 externalLink: false
 ---
 
-# 1. 개발환경 구축
+# 개발환경 구축
 ---
 
 1. [JDK(Java Development Kit) 설치](https://openjdk.java.net/) (8버전 설치함)  
@@ -72,8 +72,6 @@ externalLink: false
 
 * [톰캣링크](http://tomcat.apache.org/)
 
-# 2. 프로젝트 생성
----
 
 
 
