@@ -16,22 +16,24 @@ externalLink: false
 ---
 
 
-# 토이 프로젝트_심부름
+# 토이 프로젝트_심부름  
 
-## * 개발환경 구축
+## * 개발환경 구축  
 
-1. [JDK(Java Development Kit) 설치](https://openjdk.java.net/) (8버전 설치함)  
+### 1. [JDK(Java Development Kit) 설치](https://openjdk.java.net/) (8버전 설치함)  
     ```
      기본적으로 java 개발을 하기위해서는 JDK가 설치되어 있어야 하고
      보통 많이 사용하는 버전이 1.8버전이기 때문에 8버전을 설치
     ```
 
 
-2. 환경 변수 설정
+### 2. 환경 변수 설정
     ```
-    javac.exe, java.exe를 다른 디렉토리에서도 실행할 수 있도록 환경변수(path)에 bin 경로를 넣어준다.
+    javac.exe, java.exe를 다른 디렉토리에서도 실행할 수 있도록 
+    환경변수(path)에 bin 경로를 넣어준다.
 
-    1. 환경변수 편집기에 들어가서 시스템 변수에 JAVA_HOME이라는 변수를 추가한다(java 파일경로)
+    1. 환경변수 편집기에 들어가서 시스템 변수에 JAVA_HOME이라는 
+    변수를 추가한다(java 파일경로)
 
     2. 시스템 변수중 path라는 변수를 찾아 java폴더안 bin 경로를 추가해준다
 
@@ -46,7 +48,7 @@ externalLink: false
 
     ![자바 확인](../assets/images/환경변수3.png)
 
-3. IDE 설치
+### 3. IDE 설치
 
     ```
     자바 개발시 가장많이 사용하는 이클립스IDE나 
@@ -57,7 +59,7 @@ externalLink: false
     혹은
     * [STS4설치](https://spring.io/tools)(나는 이거 설치)
 
-4. 
+### 4. 
 
 
 
