@@ -16,6 +16,7 @@ externalLink: false
 ---
 
 # 1 개발환경 구축
+---
 
 1) [JDK(Java Development Kit) 설치](https://openjdk.java.net/) (8버전 설치함)  
 
@@ -70,7 +71,7 @@ externalLink: false
     [톰캣링크](http://tomcat.apache.org/)
 
 # 2. 프로젝트 생성
-
+---
 
 
 
