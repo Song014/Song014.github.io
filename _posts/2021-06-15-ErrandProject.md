@@ -27,6 +27,7 @@ externalLink: false
 
 
 2) 환경 변수 설정
+
     ```
     javac.exe, java.exe를 다른 디렉토리에서도 실행할 수 있도록 
     환경변수(path)에 bin 경로를 넣어준다.
@@ -63,6 +64,7 @@ externalLink: false
     * [STS4설치](https://spring.io/tools)(나는 이거 설치)
 
 4) WAS
+
     ```
     WebProject 실행을위한 WAS중 아파치 톰캣 다운로드 
     9버전 받음
