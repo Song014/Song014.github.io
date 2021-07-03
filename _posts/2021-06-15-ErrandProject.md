@@ -41,13 +41,13 @@ externalLink: false
     ```
 
 
-![환경변수 설정1](../assets/images/환경변수2.png)
+    ![환경변수 설정1](../assets/images/환경변수2.png)
 
-![환경변수 설정2](../assets/images/환경변수4.png)
+    ![환경변수 설정2](../assets/images/환경변수4.png)
 
-![환경변수 설정3](../assets/images/환경변수3.png)
+    ![환경변수 설정3](../assets/images/환경변수3.png)
 
-![자바 확인](../assets/images/환경변수3.png)
+    ![자바 확인](../assets/images/환경변수3.png)
 
 3. IDE 설치
 
@@ -70,7 +70,7 @@ externalLink: false
     9버전 받음
     ```
 
-[톰캣링크](http://tomcat.apache.org/)
+* [톰캣링크](http://tomcat.apache.org/)
 
 # 2. 프로젝트 생성
 ---
