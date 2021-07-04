@@ -59,6 +59,7 @@ externalLink: false
     3. CMD창에 java -version 입력, 버전 확인을 한다
     ```
 
+    ![환경변수 1](../assets/images/환경변수.png)
 
     ![환경변수 설정1](../assets/images/환경변수2.png)
 
