@@ -25,7 +25,7 @@ externalLink: false
      보통 많이 사용하는 버전이 1.8버전이기 때문에 8버전을 설치
     ```
 
-4. WAS
+2. WAS
 
     ```
     WebProject 실행을위한 WAS중 아파치 톰캣 다운로드 
@@ -45,7 +45,7 @@ externalLink: false
 
 
 
-2. 환경 변수 설정
+4. 환경 변수 설정
 
     ```
     javac.exe, java.exe를 다른 디렉토리에서도 실행할 수 있도록 
@@ -68,7 +68,7 @@ externalLink: false
 
     ![자바 확인](../assets/images/환경변수3.png)
 
-3. IDE 설치
+5. IDE 설치
 
     ```
     자바 개발시 가장많이 사용하는 이클립스IDE나 
