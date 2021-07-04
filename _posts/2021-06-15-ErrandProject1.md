@@ -25,6 +25,25 @@ externalLink: false
      보통 많이 사용하는 버전이 1.8버전이기 때문에 8버전을 설치
     ```
 
+4. WAS
+
+    ```
+    WebProject 실행을위한 WAS중 아파치 톰캣 다운로드 
+    9버전 받음
+    ```
+
+* [톰캣링크](http://tomcat.apache.org/)
+
+3. oracle
+
+    ```
+    DB 설치
+    ```
+
+
+* [오라클 설치](https://www.oracle.com/database/technologies/xe-prior-releases.html)
+
+
 
 2. 환경 변수 설정
 
@@ -63,14 +82,7 @@ externalLink: false
 혹은
 * [STS4설치](https://spring.io/tools)(나는 이거 설치)
 
-4. WAS
 
-    ```
-    WebProject 실행을위한 WAS중 아파치 톰캣 다운로드 
-    9버전 받음
-    ```
-
-* [톰캣링크](http://tomcat.apache.org/)
 
 
 
