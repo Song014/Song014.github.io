@@ -31,7 +31,7 @@ externalLink: false
 
 1. 프로젝트 생성 및 톰캣서버로 실행
 
-    ![프로젝트 생성 사진](../assets/images/프로젝트생성.png)
+    ![프로젝트 생성 사진](https://github.com/Song014/song014.github.io/blob/master/assets/images/프로젝트생성.png)
 
     ![완성](../assets/images/완성.png)
 
