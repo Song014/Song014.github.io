@@ -29,9 +29,8 @@ externalLink: false
 
 본 프로젝트에서는 Spring Legacy Project로 시작합니다.
 
-1. 프로젝트 생성 및 톰캣서버로 실행
-
-    ![프로젝트 생성 사진](https://github.com/Song014/song014.github.io/blob/master/assets/images/프로젝트생성.png)
+1. 프로젝트 생성 및 톰캣서버로 실행완성
+    ![프로젝트 생성 사진](assets/images/프로젝트생성.png)
 
     ![완성](../assets/images/완성.png)
 
