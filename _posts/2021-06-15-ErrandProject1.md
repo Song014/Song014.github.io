@@ -58,15 +58,15 @@ externalLink: false
 
     3. CMD창에 java -version 입력, 버전 확인을 한다
     ```
-    ![환경변수 1](https://github.com/Song014/song014.github.io/blob/master/assets/images/환경변수.png)
+    ![환경변수 1](../assets/images/환경변수.png)
 
-    ![환경변수 설정1](https://github.com/Song014/song014.github.io/blob/master/assets/images/환경변수2.png)
+    ![환경변수 설정1](../assets/images/환경변수2.png)
 
-    ![환경변수 설정2](https://github.com/Song014/song014.github.io/blob/master/assets/images/환경변수4.png)
+    ![환경변수 설정2](../assets/images/환경변수4.png)
 
-    ![환경변수 설정3](https://github.com/Song014/song014.github.io/blob/master/assets/images/환경변수3.png)
+    ![환경변수 설정3](../assets/images/환경변수3.png)
 
-    ![자바 확인](https://github.com/Song014/song014.github.io/blob/master/assets/images/환경변수3.png)
+    ![자바 확인](../assets/images/환경변수3.png)
 
 5. IDE 설치
 
