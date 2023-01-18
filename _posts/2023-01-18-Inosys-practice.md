@@ -3,8 +3,7 @@ title: 3. 이노시스 과제 정리
 layout: post
 date: 2023-01-18 10:00
 tag:
-- 연습
-- 게시판
+- freeBoard
 projects: true
 hidden: true # don't count this post in blog pagination
 description: 이노시스 1주일간 했던 과제 정리

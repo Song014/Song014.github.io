@@ -5,8 +5,6 @@ date: 2021-07-13 23:18
 tag:
 - toyProject
 - errand
-image: /assets/images/favicon/simicon.png
-headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: My ToyProject_errand 
