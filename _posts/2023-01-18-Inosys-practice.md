@@ -1,15 +1,15 @@
 ---
-title: 3. 이노시스 연습 과제
+title: 3. 이노시스 과제
 layout: post
-date: 2023-01-18 10:00
+date: 2021-07-13 23:18
 tag:
 - toyProject
 - errand
-image: /assets/images/proflie.jpg
+image: /assets/images/favicon/simicon.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: INOSYS practies pj
+description: My ToyProject_errand 
 category: projects
 author: GiSeok
 externalLink: false
