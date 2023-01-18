@@ -5,6 +5,7 @@ date: 2023-01-18 10:00
 tag:
 - 연습
 - 게시판
+image: /assets/images/favicon/simicon.png
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
