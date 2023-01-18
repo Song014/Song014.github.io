@@ -274,6 +274,211 @@ public String FreeBoardsDelete(@RequestParam(value="num") List<Integer> num  ){
 * 유효성 검증
 * 모두 Input tag로
 
+> view
+
+``` html
+    <div style="width: 650px; margin-left: 130px;">
+		<form id="searchForm" onsubmit="return false;">
+			<select id="searchType" name="searchType">
+				<option value="0">전체</option>
+				<option value="1">타입</option>
+				<option value="2">번호</option>
+				<option value="3">내용</option>
+				<option value="4">제목</option>
+				<option value="5">이름</option>
+				<option value="6">기간</option>
+			</select> 
+			<input type="button" id="searchBtn" value="검색" onclick="search()" />
+		</form>
+	</div>
+```
+
+> JavaScript
+
+``` jsx
+function search() { // 검색 함수
+    console.log("======== 검색 ========");
+
+    const $searchInput = $(".searchInput");
+    const $queryString = $("#searchForm").serialize();
+    const $searchKeyword = $("input[name=searchKeyword]").val();
+    const $startDateValue = $("#startDate").val();
+    const $endDateValue = $("#endDate").val();
+    let dateRegex = /^\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])$/;
+    let numberRegex = /[^0-9]/gi;
+    
+    console.log( $queryString);
+    // 유효성 검증
+    switch (Number($searchType)) {
+    case 0:
+        break;
+    case 2:
+        if($searchInput.val().trim() == ""){
+            alert("검색어를 입력해주세요");
+            return false;
+        }
+        if(numberRegex.test($searchInput.val())) {
+            alert("숫자만 입력가능합니다.");
+            $searchInput.val($searchInput.val().replace(numberRegex,''));
+            return false;
+        }
+        break; 
+    case 6:
+        if(!dateRegex.test($startDateValue)
+                    || !dateRegex.test($endDateValue)){
+            $("#startDate").val($startDateValue.replace(numberRegex,''));
+            $("#endDate").val($endDateValue.replace(numberRegex,''));
+            alert("날짜를 YYYYMMDD 형식으로 입력해주세요.");
+            
+            if($startDateValue =="" && $startDateValue == ""){
+                alert("날짜를 입력해주세요");
+                return false;
+            } 
+            if($startDateValue ==""){
+                alert("시작일을 입력해주세요");
+                return false;
+            }
+            if(getToday() < Number($startDateValue)){ // 시작일이 오늘보다 미래일때
+                alert("오늘 이후의 날짜는 조회가 불가능합니다.");
+                return false;
+            } 
+            if($endDateValue ==""){
+                alert("종료일을 입력해주세요");
+                return false;
+            }	
+            return false;
+        } else {
+            if(getToday() < Number($startDateValue)){ // 시작일이 오늘보다 미래일때
+                alert("오늘 이후의 날짜는 조회가 불가능합니다.");
+                return false;
+            } 
+            if(Number($startDateValue) > Number($endDateValue)){ // 시작일이 종료일보다 미래일때 9 > 6
+                alert("해당 기간의 조회가 불가능합니다.");
+                return false;
+            } 
+        }
+        break;
+    default:
+        if($searchInput.val().trim() == ""){
+            alert("검색어를 입력해주세요.");
+            return false;
+        }
+        break;
+        }
+    
+    $.ajax({
+        url : './freeBoardSearch.ino',
+        type : 'GET',
+        data : $queryString,
+        contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+        dataType : 'json',
+        success : function(res) {
+            if(res.state=="sucess"){
+                console.log(res);
+                
+                $("#tb").children().html("");
+                const list = res.list;
+                let str = "";
+                
+                for(let i=0; i< list.length; i++) {
+                    str +=`
+                        <tr>
+                            <td align="center"><input type="checkbox" class="selectOne"
+                                value="`+ list[i].num +`" /></td>
+                            <td style="width: 55px; padding-left: 30px;" align="center">
+                                `+list[i].codeType+`</td>
+                            <td style="width: 50px; padding-left: 10px;" align="center">`+list[i].num +`</td>
+                            <td style="width: 125px;" " align="center"><a
+                                href="./freeBoardDetail.ino?num=`+list[i].num +`">`+ list[i].title +`</a></td>
+                            <td style="width: 48px; padding-left: 50px;" align="center">`+ list[i].name +`</td>
+                            <td style="width: 100px; padding-left: 95px;" align="center">`+ list[i].regdate+`</td>
+                        <tr>
+                    `;
+                    $("#tb").html(str);
+                }
+                
+                let pageStr = "";
+                for (var i = res.startPage; i <= res.endPage; i++) {
+                    pageStr += `
+                        <li style="float: left;"><a href="javascript:void(0);"
+                        onclick="pagination(this);">`+i+`</a></li>
+                    `
+                }
+                console.log(pageStr);
+                
+                $("#pagination").html(pageStr);
+                
+                
+                
+            } else {
+                alert(res.state);
+            }
+        },
+        error : function(request, error) {
+            alert("fail");
+            // error 발생 이유를 알려준다.
+            alert("code:" + request.status + "\n" + "message:"
+                    + request.responseText + "\n" + "error:"
+                    + error);
+        }
+    });
+}
+```
+
+> Controller
+
+``` java
+@ResponseBody
+@RequestMapping(value = "/freeBoardSearch.ino", produces = "application/json; charset=utf-8")
+public Map<String, Object> FreeBoardSearch(@RequestParam Map<String, Object> map) {
+    System.out.println(map);
+    
+    // 페이징 page , totalCount
+    Paging pagination = new Paging(1, freeBoardService.freeBoardGetTotalCount(map));
+            
+    map.putAll(pagination.getPagination());
+    System.out.println(map);
+    // 페이징
+    
+    List<FreeBoardDto> list = freeBoardService.freeBoardList(map);
+    if(list.isEmpty()) {
+        map.put("state", "게시글이 없습니다.");
+        return map;
+    }
+    map.put("list", list);
+    map.put("state", "sucess");
+    return map;
+}
+```
+
+> SQL
+``` sql
+<select id="freeBoardGetList" resultType="freeBoardDto" parameterType="hashmap" > 
+    select ROWNUM as RNUM, A.* from (
+    SELECT  DECODE(CODE_TYPE, '01', '자유', '02', '익명',
+        '03', 'QnA') CODE_TYPE, NUM, NAME, TITLE, CONTENT, TO_CHAR(REGDATE , 'YYYY/MM/DD') AS REGDATE FROM FREEBOARD
+        <if test="searchType == 1 ">
+        WHERE CODE_TYPE LIKE #{codeType} 
+        </if>
+        <if test="searchType == 2 ">
+        WHERE NUM = #{searchKeyword} 
+        </if>
+        <if test="searchType == 3 ">
+        WHERE CONTENT LIKE '%' || #{searchKeyword} || '%' 
+        </if>
+        <if test="searchType == 4 ">
+        WHERE TITLE LIKE '%' || #{searchKeyword} || '%' 
+        </if>
+        <if test="searchType == 5 ">
+        WHERE NAME LIKE '%' || #{searchKeyword} || '%' 
+        </if>
+        <if test="searchType == 6 " >
+        WHERE TO_CHAR(REGDATE, 'YYYYMMDD') BETWEEN #{startDate} AND #{endDate}
+        </if>
+        ORDER BY NUM DESC
+    ) A WHERE rownum between #{startCount} and #{endCount}  
+</select>
+```
 
 ### 7. 페이징 구현
 
@@ -281,5 +486,55 @@ public String FreeBoardsDelete(@RequestParam(value="num") List<Integer> num  ){
 * 이전 다음 버튼 X
 * 현재 게시글 기준 앞뒤로 리프레시
 
+> view
+
+``` html
+<ul id="pagination" style="list-style: none;">
+    <c:forEach begin="${pagination.startPage }" end="${pagination.endPage }" var="i" varStatus="status">
+        <!-- page 시작번호 부터 끝번호 만큼 페이지 번호의 숫자 생성  -->
+        <c:choose>
+            <c:when test="${page.page == status.count }">
+                <!-- 선택된 페이지 -->
+                <li style="float: left;"><a href="javascript:void(0);"
+                    onclick="pagination(this);">${i}</a></li>
+            </c:when>
+            <c:otherwise>
+                <li style="float: left;"><a href="javascript:void(0);"
+                    onclick="pagination(this);">${i}</a></li>
+            </c:otherwise>
+        </c:choose>
+    </c:forEach>
+</ul>
+```
+
+> Controller
+
+검색기능 참고 
+
+> SQL
+
+``` sql
+<select id="freeBoardGetTotalCount" resultType="int"  parameterType="hashmap">
+    SELECT COUNT(*) AS totalCount FROM FREEBOARD
+        <if test="searchType == 1 ">
+            WHERE CODE_TYPE LIKE #{codeType}
+        </if>
+        <if test="searchType == 2 ">
+            WHERE NUM = #{searchKeyword}
+        </if>
+        <if test="searchType == 3 ">
+            WHERE CONTENT LIKE '%' || #{searchKeyword} || '%'
+        </if>
+        <if test="searchType == 4 ">
+            WHERE TITLE LIKE '%' || #{searchKeyword} || '%'
+        </if>
+        <if test="searchType == 5 ">
+            WHERE NAME LIKE '%' || #{searchKeyword} || '%'
+        </if>
+        <if test="searchType == 6 ">
+            WHERE TO_CHAR(REGDATE, 'YYYYMMDD') BETWEEN #{startDate} AND #{endDate}
+        </if>
+</select>
+```
 
 
