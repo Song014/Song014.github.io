@@ -12,6 +12,7 @@ description: 이노시스 1주일간 했던 과제 정리
 category: projects
 author: GiSeok
 externalLink: false
+published: true
 ---
 
 # 과제 순서
