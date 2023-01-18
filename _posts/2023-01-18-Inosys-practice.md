@@ -1,12 +1,15 @@
 ---
-title: 3. 이노시스 과제 정리
+title: 3. 이노시스 연습 과제
 layout: post
 date: 2023-01-18 10:00
 tag:
-- freeBoard
+- toyProject
+- errand
+image: /assets/images/proflie.jpg
+headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: 이노시스 1주일간 했던 과제 정리
+description: INOSYS practies pj
 category: projects
 author: GiSeok
 externalLink: false
