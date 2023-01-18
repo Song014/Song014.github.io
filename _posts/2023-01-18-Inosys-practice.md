@@ -1,20 +1,18 @@
 ---
-title: 3. 심부름웹 프로젝트 시작
+title: 3. 이노시스 과제 정리
 layout: post
-date: 2021-07-13 23:18
+date: 2023-01-18 10:00
 tag:
-- toyProject
-- errand
-image: /assets/images/favicon/simicon.png
-headerImage: true
+- 연습
+- 게시판
+headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: My ToyProject_errand 
+description: 이노시스 1주일간 했던 과제 정리
 category: projects
 author: GiSeok
 externalLink: false
 ---
-
 
 # 과제 순서
 > 1. [개발 환경 구성](#1-개발-환경-구성)
