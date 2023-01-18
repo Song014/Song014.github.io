@@ -186,7 +186,9 @@ public String FreeBoardDelete(@RequestParam int num  ){
     
 * DB에서 한번에 처리되도록
 * 자바에서 for문 사용 금지
+
 >View
+
 ``` jsp
 $("#selectAll").click(function() { // 게시글 전체 체크박스 이벤트
     if ($("#selectAll").is(":checked")) {
@@ -236,21 +238,22 @@ function selectDelete() { // 게시글 다중 삭제 함수
     });
 }
 ```
+
 >Controller
 
 ``` java
 @ResponseBody
-	@RequestMapping("/freeBoardsDelete.ino")
-	public String FreeBoardsDelete(@RequestParam(value="num") List<Integer> num  ){
-		try {
-			// 삭제 기능 num 받아서 삭제 
-			freeBoardService.FreeBoardsDelete(num);	
-			return "sucess";
-		} catch (Exception e) {
-			System.out.println("예외 내용: "+e.getMessage());
-			return e.getMessage();
-		}
-	}
+@RequestMapping("/freeBoardsDelete.ino")
+public String FreeBoardsDelete(@RequestParam(value="num") List<Integer> num  ){
+    try {
+        // 삭제 기능 num 받아서 삭제 
+        freeBoardService.FreeBoardsDelete(num);	
+        return "sucess";
+    } catch (Exception e) {
+        System.out.println("예외 내용: "+e.getMessage());
+        return e.getMessage();
+    }
+}
 ```
 >SQL
 
