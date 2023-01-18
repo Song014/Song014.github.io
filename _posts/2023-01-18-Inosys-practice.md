@@ -69,6 +69,7 @@ FROM
 * 글쓰기 시 try-catch 문으로 Exception 처리(catch일때도 sucess로 처리됨)
 
 >VIEW
+
 ``` jsp
 function formSubmit() {
     const $queryString = $("form[name=freeBoard]").serialize();
@@ -123,6 +124,7 @@ function formSubmit() {
 }
 ```
 > Controller
+
 ``` java
 @ResponseBody // Ajax
 @RequestMapping("/freeBoardInsertPro.ino")
@@ -234,6 +236,7 @@ function selectDelete() { // 게시글 다중 삭제 함수
 }
 ```
 >Controller
+
 ``` java
 @ResponseBody
 	@RequestMapping("/freeBoardsDelete.ino")
@@ -249,6 +252,7 @@ function selectDelete() { // 게시글 다중 삭제 함수
 	}
 ```
 >SQL
+
 ``` xml
 <update id="freeBoardsDelete" parameterType="list">
     DELETE FROM FREEBOARD
