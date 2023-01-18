@@ -31,7 +31,7 @@ externalLink: false
 
 ### 1. 타입에 데이터 출력하기
 
-``` jsp
+``` jsx
  //el 태그의 변수명이 잘못되어 있었음 아래와 같이 수정 후 정상 출력
  ${dto.codeType } 
 ```
@@ -71,7 +71,7 @@ FROM
 
 >VIEW
 
-``` jsp
+``` jsx
 function formSubmit() {
     const $queryString = $("form[name=freeBoard]").serialize();
     const $name = $("input[name=name]");
@@ -189,7 +189,7 @@ public String FreeBoardDelete(@RequestParam int num  ){
 
 >View
 
-``` jsp
+``` jsx
 $("#selectAll").click(function() { // 게시글 전체 체크박스 이벤트
     if ($("#selectAll").is(":checked")) {
         $(".selectOne").prop("checked", true);
