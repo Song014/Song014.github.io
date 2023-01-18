@@ -3,9 +3,9 @@ title: 3. 이노시스 과제
 layout: post
 date: 2021-07-13 23:18
 tag:
-- toyProject
-- errand
-image: /assets/images/favicon/simicon.png
+- 연습
+- 게시판
+image: /assets/images/proflie.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
