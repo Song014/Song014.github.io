@@ -2,7 +2,6 @@
 title: 3. 이노시스 과제
 layout: post
 date: 2023-01-18
-last_modified_at: 2023-01-18
 tag:
 - 연습
 - 게시판
